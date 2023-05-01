@@ -44,7 +44,7 @@ handleClick = (state) => {
           />
         </Section>
         <Section title="Statistics">
-          {this.countTotalFeedback() ? (<Statistics good={good}
+          { (this.countTotalFeedback() !== 0) ? (<Statistics good={good}
             neutral={neutral}
             bad={bad}
             total={this.countTotalFeedback()}
